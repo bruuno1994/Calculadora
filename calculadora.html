@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="calculadora.js"></script>
+    <link rel="stylesheet" href="calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+        <div id="calculadora">
+            <div id="visor">
+                <input type="text" v-model="numero1"><br>
+                <input type="text" v-model="numero2"><br>
+                <span>O resultado da soma é: {{resultado}}</span>
+            </div>
+            <div id="botoes">
+                <input type="button" value="1" v-on:click="alterarValor">
+                <input type="button" value="2" v-on:click="alterarValor">
+                <input type="button" value="3" v-on:click="alterarValor">
+                <input type="button" value="4" v-on:click="alterarValor">
+                <input type="button" value="5" v-on:click="alterarValor">
+                <input type="button" value="6" v-on:click="alterarValor">
+                <input type="button" value="7" v-on:click="alterarValor">
+                <input type="button" value="8" v-on:click="alterarValor">
+                <input type="button" value="9" v-on:click="alterarValor">
+                <input type="button" value="+" v-on:click="soma">
+                <input type="button" value="-" v-on:click="subtrair">
+                <input type="button" value="*" v-on:click="multiplicar">
+                <input type="button" value="/" v-on:click="dividir">
+                <input type="button" value="." v-on:click="alterarValor">
+                <input type="button" value="=" v-on:click="resultado">
+                <input type="button" value="C" v-on:click="limpar">
+            </div>
+        </div>
+</body>
+</html>
