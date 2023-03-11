@@ -21,8 +21,8 @@ createApp({
         },
         limparVisor() {
             this.resultado = 0,
-            this.calculo = 0
+            this.calculo = ''
         }
         }
     }
-).mount("#app");
+).mount("#app")

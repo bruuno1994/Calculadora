@@ -5,10 +5,12 @@
 }
 
 #calculadora {
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 5px solid black;
+    border-radius: 10px;
     width: 350px;
     height: 500px;
+    background: lightgray;
+    box-shadow: 5px 5px 5px 7px gray;
 }
 
 #visor {
@@ -16,42 +18,49 @@
     height: 50px;
     padding: 5px;
     margin: 20px;
-    border: 1px solid black;
+    border: 2px solid gray;
     border-radius: 10px;
-    background: linear-gradient(rgb(0, 0, 0), rgb(21, 22, 21), rgb(29, 29, 34));
-    color: white;
+    background: linear-gradient(gray,lightgray,white);
+    color: black;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 #botoes {
     width: 300px;
-    height: 350px;
-    padding: 10px;
-    margin: 10px;
-    align-items: center;
-    justify-content: center;
+    height: 325px;
+    padding: 5px;
+    margin: 20px;
 }
 
 input[type=button] {
     width: 50px;
     height: 40px;
-    padding: 10px;
-    margin: 3px;
     background-color: red;
     color: white;
     border: 2px solid black;
     border-radius: 3px;
     font-size: 1.2em;
+    padding: 10px;
+    margin: 12px;
 }
 
 input[type=button]:hover {
     width: 50px;
     height: 40px;
     padding: 10px;
-    margin: 3px;
+    margin: 12px;
     background-color: black;
     color: red;
     border: 2px solid red;
     border-radius: 3px;
     font-size: 1.2em;
+}
+
+#rodape {
+    font-size: 1.2rem;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
