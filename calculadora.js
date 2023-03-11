@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            resultado: 000,
+            resultado: '',
             calculo: ""
         }
     },
@@ -12,7 +12,12 @@ createApp({
             this.calculo += caracter
         },
         resultadoCalculo() {
-            this.resultado = eval(this.calculo)
+            if(eval(this.calculo) == "Infinity") {
+                this.resultado = "Erro"
+            } else {
+                this.resultado = eval(this.calculo)
+            }
+            this.calculo = ''
         },
         limparVisor() {
             this.resultado = 0,
